@@ -10,15 +10,47 @@ Go get em!*/
 /*1.  Variables with a String as their value.
 Declare variables named yourName, neighborName, teacherName.  Console log each variable.*/
 
+var yourName = "Christine";
+//console.log(yourName);//
+
+var neighborName = "Ellen";
+
+var teacherName = "Victor";
+//console.log(teacherName);//
+
+
 /*2. Variable with a Number as their value.
 Declare variables named numberOfFloorsBurjKhalifa, TokyoOlympicsYear. Please assign the actual data for each variable.
-Console log each variable.*/
+Console log each variable().*/
+
+var numberOfFloorsBurjKhalifa = 163;
+//console.log(numberOfFloorsBurjKhalifa);
+
+var tokyoOlympicsYear = 2020;
+//console.log(tokyoOlympicsYear);
 
 /*3. Variables with Boolean values
 Declare variables named lovesPrepClass, eatsDonuts, drinksGin.  Console log each variable.*/
 
+var lovesPrepClass = true;
+//console.log(lovesPrepClass);
+
+var eatDonuts = true;
+//console.log(eatDonuts);
+
+var drinksGin = false;
+//console.log(drinksGin);
+
+
 /*4. Variable with Null values
 Declare variables named completedCodingChallenge, traveledToSpace.  Console log each variable*/
+
+var completedCodingChallenge = null;
+//console.log(completedCodingChallenge);
+
+var traveledToSpace = null;
+//console.log(traveledToSpace);
+
 
 /*5.  Variables with Array for its value.
 Declare a variable named japanPrefectures and assign the value of any 5 prefectures in Japan.
@@ -26,22 +58,42 @@ Console log the variable
 Console log the value at index 1.
 Console log the value at index 3.*/
 
+var japanPrefectures = ["Okinawa", "Tokyo", "Osaka", "Kagawa", "Shikoku"];
+//console.log(japanPrefectures);
+
+//console.log(japanPrefectures[1]);
+//console.log(japanPrefectures[3]);
+
 /*6.  Variable with Array for its value.
 Declare a variable named planets and assign the value of each planet in our solar system, in the order of distance from the sun.  
 Console log the variable
 Console log "Earth" using the index position
 Console log "Uranus" using the index position*/
 
+var planets = ["Mercury", "Venus", "Earth", "Mars", "Jupiter", "Saturn", "Uranus", "Neptune", "Pluto"];
+//console.log(planets[2]);
+
+//console.log(planets[6]);
+
 /*7. Variables with Array for its value.
 Declare a variable named india and assign the value of 3 popular tourist attractions.  
 Console log the variable.*/
+
+var india = ["Taj Mahal", "Ganges", "Amer Fort"];
+//console.log(india);
 
 /*8. Adding new elements to an array.
 Add another popular tourist attraction to the india variable from position 1 of the index.
 (hint, it is not the push() method). Console log the variable.*/
 
+india.splice(0, 0, "Akshardham");
+//console.log(india);
+
 /*9. Removing the last element from an array.
 Using the same india variable, remove the last element from the array. Console log the variable. */
+
+india.pop();
+//console.log(india);
 
 /*10. Removing an element from an array into a new array. 
 Removethe first two elements in the snacks array and return a new array.
@@ -49,11 +101,19 @@ Console log the new variable. */
 
 var snacks = ["carrot sticks dipped in bitter chocolate", "panko-crusted broccoli", "peanut butter and brussel sprouts", "gin tonic shave ice", "deep fried spam", "cap n crunch french toast finger sandwiches"];
 
+snacks.splice (0, 2);
+//console.log(snacks);
+
 /*11. Declare two variables with names of your choosing and use the triple comparison operator (===) to compare:
 a) two strings "Racecar" and "racecar"
 b) a string and a number "three" and 3
-
 console log each variable*/
+
+var sportCar = ("Racecar" === "racecar");
+//console.log(sportCar);
+
+ var num = ("three" === 3);
+ //console.log(num);
 
 /*12.  Declare a literal object named "hotel" with properties and values set to:
 
@@ -64,6 +124,15 @@ console log each variable*/
 
  console log the object*/
 
+ var hotel  = {
+  name: "Hilton",
+  rooms: 200,
+  pool: true,
+  checkIn: null
+ };
+
+ //console.log(hotel);
+
 /*13.  Declare a literal object named "car" with properties and values set to:
 
     make  => "BMW"
@@ -73,6 +142,15 @@ console log each variable*/
 
  console log the object*/
 
+ var car = {
+  make: "BMW",
+  model: "X5",
+  year: 2015,
+  doors: 4
+ };
+
+ console.log(car);
+
 /*14.  Declare a literal object named bigBox and set its value to be an empty object.
 
 Add a property named size and set it to a random number value between 0 and 50 (hint, use Math.something...)
@@ -80,6 +158,8 @@ Add a property named color and set it to any color.
 Add a property named contents and set it to be an empty array
 
 console log the object*/
+
+var bigBox = {};
 
 /*15.  Declare a literal object named "colorMeBadd" with properties and values set to:
 
